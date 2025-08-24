@@ -2,6 +2,7 @@ const dotenv = require("dotenv").config();
 const express = require("express");
 const app = express();
 const urlRoutes = require("./routes/url.route");
+const adminRoutes = require("./routes/admin.route");
 
 const connectToDb = require("./db/db");
 connectToDb();
@@ -14,6 +15,8 @@ const cors = require("cors");
 app.use(cors());
 
 app.use("/",urlRoutes);
+
+app.use("/admin",adminRoutes);
 
 
 
