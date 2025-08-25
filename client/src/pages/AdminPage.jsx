@@ -41,9 +41,29 @@ function AdminPage() {
 
         <div className="relative z-10 p-8">
           {/* Header */}
-          <div className="mb-8">
-            <h1 className="text-4xl font-bold text-white mb-2">URL Shortener Admin</h1>
+          <div className="flex items-center justify-between">
+            <div className="mb-8">
+            <h1 className="text-4xl font-bold text-white mb-2">URL<span className="text-blue-500">SHORTNER</span> Admin</h1>
             <p className="text-slate-400">Manage and monitor your shortened URLs</p>
+          </div>
+
+          <div className="text-slate-400 hover:text-white cursor-pointer text-xl"><a href="/"><span className="sr-only">Home</span>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  strokeWidth="1.8"
+  strokeLinecap="round"
+  strokeLinejoin="round"
+  className="w-6 h-6 transition-colors"
+  aria-hidden="true"
+>
+  {/* Roof */}
+  <path d="M3 10.5L12 4l9 6.5" />
+  {/* House body */}
+  <path d="M5 10v10h5v-5h4v5h5V10" />
+</svg></a></div>
           </div>
 
           
