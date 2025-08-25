@@ -104,7 +104,7 @@ function AdminPage() {
                     {urlData.map((url) => (
                       <tr key={url.id} className="border-t border-slate-800 hover:bg-slate-800/30">
                         <td className="p-4">
-                          <div className="max-w-xs">
+                          <div className="max-w-xs truncate">
                             <p className="text-white " title={url.originalUrl}>
                               {url.originalUrl}
                             </p>
