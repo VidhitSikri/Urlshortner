@@ -49,7 +49,7 @@ function HomePage() {
             </a>
           </div>
 
-          {/* Right: Create Account */}
+         
           <button onClick={() => window.location.href = "/about"}  className="flex items-center gap-2 cursor-pointer text-white hover:text-blue-400 font-medium">
             About Page
           </button>
