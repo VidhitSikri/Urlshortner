@@ -13,7 +13,7 @@ function HomePage() {
   const handleShorten = async () => {
     if (!value.trim()) return;
     try {
-      const res = await axios.post("http://localhost:3000/api/shorten", {
+      const res = await axios.post(`${import.meta.env.VITE_BASE_URL}/api/shorten`, {
         originalUrl: value,
       });
       console.log(res.data.newUrl.shortUrl);
